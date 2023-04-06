@@ -1,0 +1,17 @@
+<?php 
+    //error_reporting(E_ERROR | E_PARSE);
+    require_once '../model/modelTipoUser.php';
+    if(empty($_GET['idTipoUpDate'])){
+        header('location: userList.php');
+    }
+    else{
+        $idTipo = $_GET['idTipoUpDate'];
+        $objTipo = new modelTipoUser($idTipo, null); 
+
+        $consultaTipo = $objTipo->consultarXidTipo();
+        $countTipo = count(array($consultaTipo));
+        if($countTipo == 0){
+            header('location: userList.php');
+        }
+    }
+?>

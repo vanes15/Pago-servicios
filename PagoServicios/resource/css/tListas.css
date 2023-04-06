@@ -1,0 +1,102 @@
+body{
+    background-color: #f1f1f1ff;
+   font-family: Arial;
+    font-weight: 300;
+    width: 90%;
+    padding: 15px;
+}
+
+
+
+table{
+    position: relative;
+    margin-left: 18%;
+   background-color: white;
+   border:collapse;
+   width: 70%;
+}
+
+th, td{
+
+   padding: 20px;
+}
+
+thead{
+   background-color: #212F3D;
+   border-bottom: solid 5px #0F362D;
+   color: white;
+   font-weight: 200;
+   font-size: 15px;
+
+
+}
+
+tr:nth-child(even){
+   background-color: #ddd;
+}
+
+tr:hover td{
+   background-color:#C2C6C9;
+   color: white;
+   font-weight: 300;
+   font-size: 16px;
+
+}
+
+button{
+   width: 100%;
+   padding: 10px 20px;
+   outline: none;
+   font-weight: 400;
+   border: 1px solid #607d8b;
+   font-size: 16px;
+   letter-spacing: 1px;
+   background: transparent;
+   border-radius: 300px;
+   color: #607d8b;
+   margin-bottom:5px;
+}
+
+a{
+   text-decoration: none;
+   color: #607d8b;
+}
+
+.table-responsive {
+   min-height: .01%;
+   width:70%;
+   margin:70px auto;
+   overflow-x: auto;
+}
+
+@media screen and (max-width: 767px) {
+   .table-responsive {
+       width: 100%;
+       margin-bottom: 15px;
+       overflow-y: hidden;
+       -ms-overflow-style: -ms-autohiding-scrollbar;
+       border: 1px solid #ddd;
+   }
+
+   td{
+       padding: 10px;
+
+   }
+
+   table{
+       width:70%;
+   }
+
+
+   .table-responsive > .table {
+       margin-bottom: 0;
+   }
+   .table-responsive > .table > thead > tr > th,
+   .table-responsive > .table > tbody > tr > th,
+   .table-responsive > .table > tfoot > tr > th,
+   .table-responsive > .table > thead > tr > td,
+   .table-responsive > .table > tbody > tr > td,
+   .table-responsive > .table > tfoot > tr > td {
+       white-space: nowrap;
+   }
+}
